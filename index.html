@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Steven's Twittler</title>
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
+    <script src="twitterbody.js"></script>
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link href="style.css" rel="stylesheet" type="css/text">
+
   </head>
   <body>
-    <script>
-
-      $(document).ready(function(){
-        var $body = $('body');
-        $body.html('');
-
-        var index = streams.home.length - 1;
-        while(index >= 0){
-          var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
-          $tweet.appendTo($body);
-          index -= 1;
-        }
-
-      });
-
-    </script>
+    <header>
+      <div id="title">Twittler</div>
+      <div class="nav">
+        <div class="container">
+          <ul id="location" class="pull-left">
+            <li><a href="#">home</a></li>
+          </ul>
+          <ul id= "user" class="pull-right">
+            <li><a href="#">stevenshyun</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="tweet">
+        <div class ="container">
+          <form>
+            <textarea rows="4" cols="50" id="message" placeholder="What's happening?" maxlength="130"></textarea>
+          </form>
+          <button class="button" type="submit">Tweet</button>
+    </header>
+    <div id="newsfeed">
+      <div class="newsfeed">
+        <div class="container">
+          <script src="twitterbody.js"></script>
+       </div>
+      </div>
+    </div>
   </body>
 </html>
