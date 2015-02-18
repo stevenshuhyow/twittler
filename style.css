@@ -1,0 +1,67 @@
+.nav ul li{
+  display: inline;
+}
+
+.nav a {
+  color: #5a5a5a;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+body {
+	background-color: #99CCFF;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+
+}
+
+#title {
+	font-size: 35px;
+	color: black;
+	text-align: center;
+}
+
+#message{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	word-wrap: break-word;
+	max-width: 300px;
+
+}
+
+.tweet button{
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-left: 565px;
+}
+
+.newsfeed {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	list-style:none;
+	text-align: left;
+	width: 27%;
+	margin-top: 10px;
+	background-color: white;
+	font-size: 14px;
+	padding:  10px 10px;
+	overflow: hidden;
+}
+
+.newsfeed .name{
+	color: red;
+}
+
+.notifier{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.newsfeed .message{
+	word-wrap: break-word;
+	max-width: 250px;
+}
